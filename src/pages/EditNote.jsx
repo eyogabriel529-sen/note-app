@@ -45,7 +45,7 @@ const EditNote = ({notes, setNotes}) => {
     <section>
       <header className="create-note__header">
 
-        <Link to="/" className="btn"><img src="/arrow.svg" alt="Back"/></Link>
+        <Link to="/" className="btn"><img src="/arrow.png" alt="Back"/></Link>
 
         <button className="btn lg primary" onClick={handleForm}>Save</button>
 

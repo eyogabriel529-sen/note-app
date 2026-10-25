@@ -28,7 +28,7 @@ const Notes = ({notes}) => {
         {!showSearch && <h2>My Notes</h2>}
         {showSearch && <input type="text" value={text} onChange={(e) => {setText(e.target.value); handleSearch()}} autoFocus placeholder='Keyword...' />}
 
-        <button className='btn' onClick={() => setShowSearch(prevState => !prevState)}>{ showSearch ? <img src="/close.svg" /> : <img src="/search.svg" alt="Search"  /> }</button>
+        <button className='btn' onClick={() => setShowSearch(prevState => !prevState)}>{ showSearch ? <img src="/close.png" /> : <img src="/search.svg" alt="Search"  /> }</button>
 
       </header>
       <div className="notes__container">
