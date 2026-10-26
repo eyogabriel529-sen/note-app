@@ -26,10 +26,11 @@ const EditNote = ({notes, setNotes}) => {
       })
 
       setNotes(newNotes)
+            // redirect to homepage
+      navigate('/')
     }
 
-    // redirect to homepage
-    navigate('/')
+
   }
 
   const handleDelete = () =>{
