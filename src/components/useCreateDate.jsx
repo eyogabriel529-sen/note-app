@@ -28,9 +28,10 @@ const useCreateDate = () => {
         case 11: monthName = "Dec"
         break;
     }
-
+    const minutes = String(dateObj.getMinutes()).padStart(2, "0")
     const date = `${monthName} ${dateObj.getDate()}, ${dateObj.getFullYear()} [${dateObj.getHours()}:${dateObj.getMinutes()}]`;
     return date
+
 
 }
 
