@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { v4 as uuid } from 'uuid'
 
 import useCreateDate from "../components/useCreateDate";
