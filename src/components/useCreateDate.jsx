@@ -29,8 +29,9 @@ const useCreateDate = () => {
         break;
     }
     const minutes = String(dateObj.getMinutes()).padStart(2, "0")
-    const date = `${monthName} ${dateObj.getDate()}, ${dateObj.getFullYear()} [${dateObj.getHours()}:${dateObj.getMinutes()}]`;
+    const date = `${monthName} ${dateObj.getDate()}, ${dateObj.getFullYear()} [${dateObj.getHours()}:${minutes}]`;
     return date
+
 
 
 }
