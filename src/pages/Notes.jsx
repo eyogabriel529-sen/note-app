@@ -14,7 +14,7 @@ const Notes = ({notes}) => {
 
   const handleSearch = () => {
     setFilteredNotes(notes.filter(note => {
-      if(note.title.toLowerCase().match(text.toLocaleLowerCase())){
+      if(note.title.toLowerCase().includes(text.toLocaleLowerCase())){
         return note;
       }
     }))
