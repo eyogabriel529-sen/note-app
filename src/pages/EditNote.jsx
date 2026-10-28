@@ -13,25 +13,19 @@ const EditNote = ({notes, setNotes}) => {
   const navigate = useNavigate()
 
   const handleForm = (e) => {
-    e.preventDefault()
+  e.preventDefault()
 
-    if(title && details) {
-      const newNote = {...note, title, details, date}
+  if(title && details) {
+    const newNote = {...note, title, details, date}
 
-      const newNotes = notes.map(item => {
-        if(item.id == id) {
-          item = newNote
-        }
-        return item
-      })
+   
+    const newNotes = [newNote, ...notes.filter(item => item.id != id)]
 
-      setNotes(newNotes)
-            // redirect to homepage
-      navigate('/')
-    }
-
-
+    setNotes(newNotes)
   }
+
+  navigate('/')
+}
 
   const handleDelete = () =>{
     if(window.confirm('Are you sure you want to delete?')){
